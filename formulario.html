@@ -17,18 +17,21 @@
             <th colspan="2" rowspan="2"><a href="categorias.html">CATEGORÍAS</a><br></th>
             <th colspan="2" rowspan="2"><a href="tiendasgaming.html">TIENDAS GAMING</a><br></th>  
         </tr>
+<!--COMENZAMOS CON UN ENCABEZADO COMO TITULO PARA EL FORMULARIO.-->
     </table>
     <header><h1>FORMULARIO DE SUSCRIPCIÓN.</h1></header>
     <nav>
     <body>
         <form>
+<!--EN UN FIELDSET, USANDO LEGEND PARA QUE SE VEA EL TITULO DEL RECUADRO Y LA INFORMACIÓN DEL USUARIO
+CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->            
             <fieldset>
                 <legend>Información Personal</legend><br>
                     <label>Nombre Usuario: </label>
-                    <input name="Nombre y Apellidos" type="text" placeholder="Usuario_19" required="true"/><br><br>
+                    <input name="nombre y Apellidos" type="text" placeholder="usuario_19" required="true"/><br><br>
 
                     <laber>Correo Electrónico</laber>
-                    <input name="Correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
+                    <input name="correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
      
                     <label>Edad: </label>
                 <select>
@@ -40,9 +43,11 @@
                     <option>+21 años</option>
                 </select><br><br>
                 <label>Contraseña: </label>
-                <input name="Contraseña" type="password" required="true"><br>
+                <input name="contraseña" type="password" required="true"><br>
             </fieldset><br>
     </nav>
+<!--AÑADIMOS CHECK BOX, PARA QUE SEÑALEN LAS CASILLAS QUE PREFIERAN, LAS HORAS DE JUEGO ESTÁN CON UN TYPE TIME.
+POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN ROWS Y COLS, PARA UN TAMAÑO IDONEO.-->
     <section>      
             <fieldset>
                 <legend>Información Adiccional</legend><br>
@@ -64,7 +69,6 @@
                 <label>Puzzles.</label>
                 <input type="checkbox">
                 <label>Shooter.</label><br>
-
 
                 <br><label>Horas de Juego Semanales (aproximadamente): </label>
                 <input type="time"><br><br>
