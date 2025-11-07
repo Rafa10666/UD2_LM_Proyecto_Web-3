@@ -10,30 +10,79 @@
         bordes de las celdas para un look limpio */ border-collapse:
         collapse; } </style>
     </head>
-    <header><h1>FORMULARIO</h1></header>
-    <nav>
     <table>
         <tr>
             <th colspan="2" rowspan="2"><a href="index.html">INICIO</a></th>
             <th colspan="2" rowspan="2"><a href="ciber.html">CIBERCAFÉS</a><br></th>
             <th colspan="2" rowspan="2"><a href="categorias.html">CATEGORÍAS</a><br></th>
             <th colspan="2" rowspan="2"><a href="tiendasgaming.html">TIENDAS GAMING</a><br></th>  
-
         </tr>
     </table>
-    </nav>
+    <header><h1>FORMULARIO DE SUSCRIPCIÓN.</h1></header>
+    <nav>
     <body>
+        <form>
+            <fieldset>
+                <legend>Información Personal</legend><br>
+                    <label>Nombre Usuario: </label>
+                    <input name="Nombre y Apellidos" type="text" placeholder="Usuario_19" required="true"/><br><br>
+
+                    <laber>Correo Electrónico</laber>
+                    <input name="Correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
+     
+                    <label>Edad: </label>
+                <select>
+                    <option>Selecciona</option>
+                    <option>18 años</option>
+                    <option>19 años</option>
+                    <option>20 años</option>
+                    <option>21 años</option>
+                    <option>+21 años</option>
+                </select><br><br>
+                <label>Contraseña: </label>
+                <input name="Contraseña" type="password" required="true"><br>
+            </fieldset><br>
+    </nav>
+    <section>      
+            <fieldset>
+                <legend>Información Adiccional</legend><br>
+                <label>Géneros Favoritos: </label><br>
+                <input type="checkbox">
+                <label>Acción.</label>
+                <input type="checkbox">
+                <label>Aventura.</label>
+                <input type="checkbox">
+                <label>RPG.</label>
+                <input type="checkbox">
+                <label>Terror.</label>
+                <br>
+                <input type="checkbox">
+                <label>Estrategia.</label>
+                <input type="checkbox">
+                <label>MMO</label>
+                <input type="checkbox">
+                <label>Puzzles.</label>
+                <input type="checkbox">
+                <label>Shooter.</label><br>
 
 
-
-
-    </body>
-
-
-
-
-
-
-
-
+                <br><label>Horas de Juego Semanales (aproximadamente): </label>
+                <input type="time"><br><br>
+                <label> Opinión sobre nuestra página: </label><br>
+                <textarea  rows="4" cols="40" placeholder="Ejemplo: Nos ha encantado, tiene información que mejorar, me gustaría mas información sobre x juegos..."></textarea><br><br>
+            </fieldset>
+    </section>
+    <footer>
+            <fieldset>
+                <legend>Politica de Privacidad</legend><br>
+                <label>Acepto Términos y Condiciones:</label>
+                <input type="checkbox" required="true"><br><br>
+                <label>Noticias y Actualizaciones al correo: </label>
+                <input type="checkbox"><br><br>
+                <input type="submit" value="Inscribirme.">
+                <input  type="reset" value="Limpiar formulario."><br>
+            </fieldset>
+        </form>
+    </footer>           
+    </body> 
 </html>
