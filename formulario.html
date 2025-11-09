@@ -19,21 +19,23 @@
         </tr>
 <!--COMENZAMOS CON UN ENCABEZADO COMO TITULO PARA EL FORMULARIO.-->
     </table>
-    <header><h1>FORMULARIO DE SUSCRIPCIÓN.</h1></header>
-    <nav>
+    <header>
+        <h1>FORMULARIO DE SUSCRIPCIÓN.</h1>
+    </header>
     <body>
+    <section>
         <form>
 <!--EN UN FIELDSET, USANDO LEGEND PARA QUE SE VEA EL TITULO DEL RECUADRO Y LA INFORMACIÓN DEL USUARIO
 CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->            
             <fieldset>
                 <legend>Información Personal</legend><br>
-                    <label>Nombre Usuario: </label>
+                    <label><b>Nombre Usuario: </b></label>
                     <input name="nombre y Apellidos" type="text" placeholder="usuario_19" required="true"/><br><br>
 
-                    <laber>Correo Electrónico</laber>
+                    <laber><b>Correo Electrónico</b></laber>
                     <input name="correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
      
-                    <label>Edad: </label>
+                    <label><b>Edad: </b></label>
                 <select>
                     <option>Selecciona</option>
                     <option>18 años</option>
@@ -42,16 +44,15 @@ CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->
                     <option>21 años</option>
                     <option>+21 años</option>
                 </select><br><br>
-                <label>Contraseña: </label>
+                <label><b>Contraseña: </b></label>
                 <input name="contraseña" type="password" required="true"><br>
             </fieldset><br>
-    </nav>
 <!--AÑADIMOS CHECK BOX, PARA QUE SEÑALEN LAS CASILLAS QUE PREFIERAN, LAS HORAS DE JUEGO ESTÁN CON UN TYPE TIME.
 POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN ROWS Y COLS, PARA UN TAMAÑO IDONEO.-->
-    <section>      
+          
             <fieldset>
                 <legend>Información Adiccional</legend><br>
-                <label>Géneros Favoritos: </label><br>
+                <label><b>Géneros Favoritos: </b></label><br>
                 <input type="checkbox">
                 <label>Acción.</label>
                 <input type="checkbox">
@@ -68,25 +69,39 @@ POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN 
                 <input type="checkbox">
                 <label>Puzzles.</label>
                 <input type="checkbox">
-                <label>Shooter.</label><br>
-
-                <br><label>Horas de Juego Semanales (aproximadamente): </label>
+                <label>Shooter.</label><br><br>
+<!--USAMOS RADIO, CON ID DEL NOMBRE DE LA PAGINA Y UN NAME GENERICO, PARA QUE EL USUARIO SOLO ELIGA UNA OPCION-->
+                <label><b>Página de Videojuegos en la que compras:</b></label><br>
+                <input type="radio" id="intagaming" name="pagina">
+                <label for="instagaming">InstaGaming</label><br>
+                <input type="radio" id="steam" name="pagina">
+                <label for="steam">Steam</label><br>
+                <input type="radio" id="epicgames" name="pagina">
+                <label for="epicgames">EpicGames</label><br>
+                <input type="radio" id="otros" name="pagina">
+                <label for="otros">Otros.</label><br>
+<!--PARA LAS HORAS DE JUEGOS SEMANALES PONEMOS UN TYPE TIME PARA QUE SEÑALE EL USUARIO LA HORA APROXIMADAMENTE 
+QUE JUEGA A LA SEMANA. POSTERIORMENTE INSERTAMOS UN TEXTAREA PARA QUE USUARIO ESCRIBA SU OPNINION Y LA ADAMPTAMOS
+CON ROW Y COLS AL TAMAÑO QUE DESEAMOS.-->
+                <br><label><b>Horas de Juego Semanales (aproximadamente): </b></label>
                 <input type="time"><br><br>
-                <label> Opinión sobre nuestra página: </label><br>
+                <label><b> Opinión sobre nuestra página: </b></label><br>
                 <textarea  rows="4" cols="40" placeholder="Ejemplo: Nos ha encantado, tiene información que mejorar, me gustaría mas información sobre x juegos..."></textarea><br><br>
-            </fieldset>
-    </section>
+            </fieldset><br>
             <fieldset>
                 <legend>Politica de Privacidad</legend><br>
-                <label>Acepto Términos y Condiciones:</label>
+                <label><b>Acepto Términos y Condiciones: </b></label>
                 <input type="checkbox" required="true"><br><br>
-                <label>Noticias y Actualizaciones al correo: </label>
+                <label><b>Noticias y Actualizaciones al correo: </b></label>
                 <input type="checkbox"><br><br>
+<!-- PARA ENVIAR EL FORMULARIO LO HACEMOS CON TYPE SUBMIT Y LE EL VALOR INSCRIBIRME, AL IGUAL CON RESET, LE DAMOS EL VALOR DE LIMPIAR FORMULARIO-->
                 <input type="submit" value="Inscribirme.">
                 <input  type="reset" value="Limpiar formulario."><br>
             </fieldset>
-        </form>   
+        </form>
+    </section>   
     <footer>
+<!-- POR ÚLTIMO AÑADIMOS UN PIE DE PAGINA PARA QUE EL USUARIO PUEDA CONTACTARNOS A TRAVÉS DE REDES Y CORREO-->
         <h3><i>Para más información. Puedes contactarnos a través de:</i></h3>
         <ul type="circle">
             <li>Instagram. (@historiagaming)</li>
