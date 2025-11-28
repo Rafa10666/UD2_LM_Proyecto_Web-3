@@ -1,0 +1,8 @@
+*{
+background-image: url('../imagenes/fondo.jpg');
+background-size: 90%;
+background-attachment: fixed;
+background-repeat:no-repeat;
+background-position: center;
+background-color: rgb(183, 255, 255);
+}
