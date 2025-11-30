@@ -1,5 +1,8 @@
+/*EN ESTE BODY AÑADIMOS UNA IMAGEN DE FONDO, CON UN TAMAÑO DEL 100%, DEJAMOS LA IMAGEN FIJADA, QUE NO SE REPITA
+Y ESTE COLOCADA EN EL CENTRO, CON UN MARGEN 0 Y UN PADDING 0 PARA QUE NO DEJE EL HUECO AL HACER EL FOOTER.*/
+
 body{
-background-image: url('../imagenes/imgbody.jpg');
+background-image: url('../imagenes/fondo.jpg');
 background-size: 100%;
 background-attachment: fixed;
 background-repeat:no-repeat;
@@ -8,6 +11,15 @@ margin:0;
 padding:0;
 }
 
+/*EL ENCABEZADO LO SITUAMOS EN EL CENTRO*/
+
+header{
+    text-align: center;
+}
+
+/*EN EL NAV DE LA CLASE "PAGINAS", HAREMOS QUE LOS ELEMENTOS SE COLOQUEN EN FILA Y ARRIBA, JUNTO LA IMAGEN,
+CON UN COLOR DE FONDO IGUAL QUE EL FONDO DE LA IMAGEN.*/
+
 .paginas {
     background-size: 100%;
     display: flex;
@@ -15,19 +27,23 @@ padding:0;
 
 }
 
+/*EN LAS TABLAS QUE COLOCAMOS PARA PONER LOS ENLACES LE DAMOS UN ESPACIADO ENTRE LOS BORDES 
+DE LAS CELDAS ADYACENTES, CON BORDE COLLAPSE SEPARAMOS LOS ELEMENTO, Y LE DAMOS UN ANCHO DEL 100% PARA 
+QUE OCUPE TODA LA PAGINA*/
+
 
 nav, table, tr {
     border-spacing: 50px;
-    table-layout: fixed;
     border-collapse: separate;
-    width: 100%;
-     
+    width: 100%;   
 }
 
-tr, th{
-    color: rgb(96, 252, 252) 
 
-}
+
+/*EN EL FOOTER LE DAMOS UNA FUENTE DE SANS-SERIF, CON UNA IMAGEN DE FONDO EN LA QUE EL TAMAÑO SERA EL 35%,
+LA DEJAMOS ESTÁTICA PARA QUE NO SE MUEVA CON LA PAGINA, LA POSICIONAMOS EN EL CENTRO, LE AÑADIMOS EL COLOR BLANCO
+AL TEXTO, UN PADDING DE 30PX PARA QUE NO SE VEA TAN PEAGADO AL TEXTOAPLIQUE 
+Y UN ANCHO DEL 100% PARA QUE OCUPE TODA LA PAGINA*/
 
 footer {
     font-family: sans-serif;
@@ -36,7 +52,15 @@ footer {
     background-attachment: static;
     background-position: center;
     color:white;
-    padding:30px 0;
+    padding:30px;
     width: 100%;
+      
+}
+
+/*INTERLINEADO EN LISTAS*/
+
+ul, li{
+    line-height: 35px;
     
 }
+
