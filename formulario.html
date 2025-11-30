@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-widt">
-        <img src="/imagenes/logo.png" width="100" alt="logo"><title>Videojuegos</title>
         <title>Formulario</title>
         <style> table, th, td { /* Define el borde: 1 píxel, sólido,
         color negro */ border: 1px solid black; } table { /* Une los
@@ -11,19 +10,23 @@
         collapse; } </style>
         <link rel="stylesheet" href="estilos/estilos.css">
     </head>
-    <table>
-        <tr>
-            <th colspan="2" rowspan="2"><a href="index.html">INICIO</a></th>
-            <th colspan="2" rowspan="2"><a href="ciber.html">CIBERCAFÉS</a><br></th>
-            <th colspan="2" rowspan="2"><a href="categorias.html">CATEGORÍAS</a><br></th>
-            <th colspan="2" rowspan="2"><a href="tiendasgaming.html">TIENDAS GAMING</a><br></th>  
-        </tr>
+    <body>
+    <nav class="paginas">
+        <img src="/imagenes/logo.png" width="100" alt="logo">
+        <table>
+            <tr>
+                <th colspan="2" rowspan="2"><a href="index.html">INICIO</a></th>
+                <th colspan="2" rowspan="2"><a href="ciber.html">CIBERCAFÉS</a><br></th>
+                <th colspan="2" rowspan="2"><a href="categorias.html">CATEGORÍAS</a><br></th>
+                <th colspan="2" rowspan="2"><a href="tiendasgaming.html">TIENDAS GAMING</a><br></th>  
+            </tr>
+        </table>
+    </nav>
 <!--COMENZAMOS CON UN ENCABEZADO COMO TITULO PARA EL FORMULARIO.-->
-    </table>
     <header>
         <h1>FORMULARIO DE SUSCRIPCIÓN.</h1>
     </header>
-    <body>
+    
     <section>
         <form>
 <!--EN UN FIELDSET, USANDO LEGEND PARA QUE SE VEA EL TITULO DEL RECUADRO Y LA INFORMACIÓN DEL USUARIO
@@ -100,9 +103,9 @@ CON ROW Y COLS AL TAMAÑO QUE DESEAMOS.-->
                 <input  type="reset" value="Limpiar formulario."><br>
             </fieldset>
         </form>
-    </section>   
+    </section> 
+ <!-- POR ÚLTIMO AÑADIMOS UN PIE DE PAGINA PARA QUE EL USUARIO PUEDA CONTACTARNOS A TRAVÉS DE REDES Y CORREO-->
     <footer>
-<!-- POR ÚLTIMO AÑADIMOS UN PIE DE PAGINA PARA QUE EL USUARIO PUEDA CONTACTARNOS A TRAVÉS DE REDES Y CORREO-->
         <h3><i>Para más información. Puedes contactarnos a través de:</i></h3>
         <ul type="circle">
             <li>Instagram. (@historiagaming)</li>
