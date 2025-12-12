@@ -64,3 +64,6 @@ ul, li{
     
 }
 
+th:hover{
+    background-color: white;
+}
