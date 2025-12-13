@@ -9,6 +9,7 @@ background-repeat:no-repeat;
 background-position: center;
 margin:0;
 padding:0;
+background-color: rgb(224, 180, 233);
 }
 
 /*EL ENCABEZADO LO SITUAMOS EN EL CENTRO*/
@@ -63,7 +64,28 @@ ul, li{
     line-height: 35px;
     
 }
+/*Aqui al pasar el cursor en las opciones de elección de la pagina pondra un fondo blanco*/
 
 th:hover{
     background-color: white;
+}
+/*Aqui ponemos un borde al logo para que quede mejor y con un radio de borde redondeado*/
+.logo{
+    border: 3px solid black;
+    border-color: aqua;
+    border-radius: 60px;
+}
+/*Aqui creamos el estilo que va a tener nuestro circulo flotante por todas las paginas*/
+div{
+    width: 60px;
+    height: 60px;
+    border-radius: 180%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    color: aqua;
 }
