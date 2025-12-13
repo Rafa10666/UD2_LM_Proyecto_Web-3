@@ -8,7 +8,36 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat:no-repeat;
 font-size: 20px;
+background-color: rgb(224, 180, 233);
 }
+
+/*Aqui al pasar el cursor en las opciones de elección de la pagina pondra un fondo blanco*/
+
+th:hover{
+    background-color: white;
+}
+
+.logo{
+    border: 3px solid black;
+    border-color: aqua;
+    border-radius: 60px;
+}
+
+/*Aqui creamos el estilo que va a tener nuestro circulo flotante por todas las paginas*/
+
+div{
+    width: 60px;
+    height: 60px;
+    border-radius: 180%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    color: aqua;
+}    
 
 /*encabezado alineado al centro*/
 
@@ -64,6 +93,10 @@ body, nav, table, tr {
 
 }
 
+
+
+
+
 /*INDEX*/
 
 /*añadido de bordes a cada lista, un display flex y un margen entre div*/
@@ -114,16 +147,6 @@ body, nav, table, tr {
 
 /*FORMULARIO*/
 
-form{
-    margin: 25px;
-    font-size: 17px;
-    font-family:
-}
-
-.cajon1{
-    background-color: 
-
-}
 
 /*CIBER*/
 
