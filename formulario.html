@@ -31,25 +31,26 @@
         <form>
 <!--EN UN FIELDSET, USANDO LEGEND PARA QUE SE VEA EL TITULO DEL RECUADRO Y LA INFORMACIÓN DEL USUARIO
 CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->            
-            <fieldset>
-                <legend>Información Personal</legend><br>
+            <div class="cajon1"></div>
+                <fieldset>
+                    <legend>Información Personal</legend><br>
                     <label><b>Nombre Usuario: </b></label>
                     <input name="nombre y Apellidos" type="text" placeholder="usuario_19" required="true"/><br><br>
-
-                    <laber><b>Correo Electrónico</b></laber>
+                    <laber><b>Correo Electrónico: </b></laber>
                     <input name="correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
      
                     <label><b>Edad: </b></label>
-                <select>
-                    <option>Selecciona</option>
-                    <option>18 años</option>
-                    <option>19 años</option>
-                    <option>20 años</option>
-                    <option>21 años</option>
-                    <option>+21 años</option>
-                </select><br><br>
-                <label><b>Contraseña: </b></label>
-                <input name="contraseña" type="password" required="true"><br>
+                    <select>
+                        <option>Selecciona</option>
+                        <option>18 años</option>
+                        <option>19 años</option>
+                        <option>20 años</option>
+                        <option>21 años</option>
+                        <option>+21 años</option>
+                    </select><br><br>
+                    <label><b>Contraseña: </b></label>
+                    <input name="contraseña" type="password" required="true"><br>
+                </div>
             </fieldset><br>
 <!--AÑADIMOS CHECK BOX, PARA QUE SEÑALEN LAS CASILLAS QUE PREFIERAN, LAS HORAS DE JUEGO ESTÁN CON UN TYPE TIME.
 POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN ROWS Y COLS, PARA UN TAMAÑO IDONEO.-->
