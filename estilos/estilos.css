@@ -8,7 +8,6 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat:no-repeat;
 font-size: 20px;
-background-color: rgb(224, 180, 233);
 }
 
 /*Aqui al pasar el cursor en las opciones de elección de la pagina pondra un fondo blanco*/
@@ -17,15 +16,18 @@ th:hover{
     background-color: white;
 }
 
+/*modificamos el logo*/
+
 .logo{
     border: 3px solid black;
     border-color: aqua;
     border-radius: 60px;
+    width: 9%;
 }
 
 /*Aqui creamos el estilo que va a tener nuestro circulo flotante por todas las paginas*/
 
-div{
+.boton{
     width: 60px;
     height: 60px;
     border-radius: 180%;
@@ -77,12 +79,6 @@ body, nav, table, tr {
 }
 
 
-/*modificacion del ancho del logo*/
-
-.logo{
-    width: 9%;
-}
-
 /*ajuste de las tablas de navagacion superiores*/
 
 .paginas {
@@ -92,7 +88,6 @@ body, nav, table, tr {
     background-color:rgb(19, 1, 43);
 
 }
-
 
 
 
@@ -146,6 +141,12 @@ body, nav, table, tr {
 /*CATEGORIAS*/
 
 /*FORMULARIO*/
+form{
+    margin: 25px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
 
 
 /*CIBER*/
