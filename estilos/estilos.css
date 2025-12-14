@@ -100,20 +100,16 @@ body, nav, table, tr {
     background-color: rgb(222, 188, 222);
     border: 4px solid rgb(87, 250, 250);
     margin: 10px;
-    display: flex;
-    padding-bottom:40px;
-    padding-top:20;
+    padding: 15px;
 
 }
 
 .tarjetas:nth-child(even){
     background-color: rgb(146, 238, 238);
     border: 4px solid rgb(247, 84, 247);
+    opacity: 0.9;
     margin: 10px;
-    display: flex;
-    padding-bottom: 40px;
-    padding-top: 20px;
-
+    padding: 15px;
 }
 
 /*Colocacion del video y audio e imagen*/
@@ -139,6 +135,35 @@ body, nav, table, tr {
 }
 
 /*CATEGORIAS*/
+
+/*Margen para que no quede pegado al filo de la pagina*/
+
+.contenido{
+    margin: 5px;
+}
+
+/*Contenido centrado y con margenes*/
+
+.mismapagina{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+/*Utilizamos la clase tarjetas del index para hacer el margen, el borde... */
+/*Ponemos todo los titulos al centro*/
+
+#titulo{
+    text-align: center;
+}
+
+#subgenero{
+    list-style-type: disc;
+    margin: 10px;
+    text-decoration: underline overline;
+}
 
 /*FORMULARIO*/
 form{
