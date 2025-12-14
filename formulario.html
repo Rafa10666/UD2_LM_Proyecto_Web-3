@@ -31,15 +31,15 @@
         <form>
 <!--EN UN FIELDSET, USANDO LEGEND PARA QUE SE VEA EL TITULO DEL RECUADRO Y LA INFORMACIÓN DEL USUARIO
 CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->            
-            <div class="cajon1"></div>
-                <fieldset>
-                    <legend>Información Personal</legend><br>
-                    <label><b>Nombre Usuario: </b></label>
+                <fieldset class="tarjetas">
+                    
+                    <legend><b>Información Personal</b></legend><br>
+                    <label>Nombre Usuario: </label>
                     <input name="nombre y Apellidos" type="text" placeholder="usuario_19" required="true"/><br><br>
-                    <laber><b>Correo Electrónico: </b></laber>
+                    <laber>Correo Electrónico: </laber>
                     <input name="correo electronico" type="email" placeholder="Introduzca su email." required="true"><br><br>
      
-                    <label><b>Edad: </b></label>
+                    <label>Edad: </label>
                     <select>
                         <option>Selecciona</option>
                         <option>18 años</option>
@@ -48,16 +48,15 @@ CON UNA CONTRASEÑA, NOMBRE Y CORREO OBLIGATORIO.-->
                         <option>21 años</option>
                         <option>+21 años</option>
                     </select><br><br>
-                    <label><b>Contraseña: </b></label>
+                    <label>Contraseña: </label>
                     <input name="contraseña" type="password" required="true"><br>
-                </div>
             </fieldset><br>
 <!--AÑADIMOS CHECK BOX, PARA QUE SEÑALEN LAS CASILLAS QUE PREFIERAN, LAS HORAS DE JUEGO ESTÁN CON UN TYPE TIME.
 POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN ROWS Y COLS, PARA UN TAMAÑO IDONEO.-->
           
-            <fieldset>
-                <legend>Información Adiccional</legend><br>
-                <label><b>Géneros Favoritos: </b></label><br>
+            <fieldset class="tarjetas">
+                <legend><b>Información Adiccional</b></legend><br>
+                <label><b>Géneros Favoritos: </b></label><br><br>
                 <input type="checkbox">
                 <label>Acción.</label>
                 <input type="checkbox">
@@ -76,7 +75,7 @@ POSTERIORMENTE AÑADIMOS UN TEXTAREA PARA QUE EL USUARIO ESCRIBA OPINION CON UN 
                 <input type="checkbox">
                 <label>Shooter.</label><br><br>
 <!--USAMOS RADIO, CON ID DEL NOMBRE DE LA PAGINA Y UN NAME GENERICO, PARA QUE EL USUARIO SOLO ELIGA UNA OPCION-->
-                <label><b>Página de Videojuegos en la que compras:</b></label><br>
+                <label><b>Página de Videojuegos en la que compras:</b></label><br><br>
                 <input type="radio" id="intagaming" name="pagina">
                 <label for="instagaming">InstaGaming</label><br>
                 <input type="radio" id="steam" name="pagina">
@@ -90,18 +89,18 @@ QUE JUEGA A LA SEMANA. POSTERIORMENTE INSERTAMOS UN TEXTAREA PARA QUE USUARIO ES
 CON ROW Y COLS AL TAMAÑO QUE DESEAMOS.-->
                 <br><label><b>Horas de Juego Semanales (aproximadamente): </b></label>
                 <input type="time"><br><br>
-                <label><b> Opinión sobre nuestra página: </b></label><br>
+                <label><b> Opinión sobre nuestra página: </b></label><br><br>
                 <textarea  rows="4" cols="40" placeholder="Ejemplo: Nos ha encantado, tiene información que mejorar, me gustaría mas información sobre x juegos..."></textarea><br><br>
             </fieldset><br>
-            <fieldset>
-                <legend>Politica de Privacidad</legend><br>
-                <label><b>Acepto Términos y Condiciones: </b></label>
+            <fieldset class="tarjetas">
+                <legend><b>Politica de Privacidad</b></legend><br>
+                <label>Acepto Términos y Condiciones: </label>
                 <input type="checkbox" required="true"><br><br>
-                <label><b>Noticias y Actualizaciones al correo: </b></label>
+                <label>Noticias y Actualizaciones al correo: </label>
                 <input type="checkbox"><br><br>
 <!-- PARA ENVIAR EL FORMULARIO LO HACEMOS CON TYPE SUBMIT Y LE EL VALOR INSCRIBIRME, AL IGUAL CON RESET, LE DAMOS EL VALOR DE LIMPIAR FORMULARIO-->
                 <input type="submit" value="Inscribirme.">
-                <input  type="reset" value="Limpiar formulario."><br>
+                <input type="reset" value="Limpiar formulario."><br>
             </fieldset>
         </form>
     </section> 
